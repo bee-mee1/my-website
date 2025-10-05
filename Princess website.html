@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BA Pretty Princess</title>
+  <style>
+    :root{--accent:#d63384;--bg:#fff9fb;--card:#ffffff;--muted:#6b6b6b}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:var(--bg);margin:0;color:#222}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    header{padding:18px 0}
+    h1.logo{margin:0;color:var(--accent);font-size:32px}
+    nav{margin-top:12px}
+    nav a{margin-right:12px;text-decoration:none;color:#444}
+    section{background:var(--card);padding:18px;border-radius:10px;margin-bottom:16px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    .muted{color:var(--muted)}
+    .samples{display:flex;flex-wrap:wrap;gap:10px}
+    .sample{flex:1 1 calc(33% - 10px);min-height:110px;background:#fff7fb;border-radius:8px;display:flex;align-items:center;justify-content:center;border:1px dashed #f5c0dd;padding:8px;text-align:center}
+    table{width:100%;border-collapse:collapse}
+    td,th{padding:8px;border:1px solid #eee;text-align:left}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer}
+    input[type=text],input[type=email],select,textarea,input[type=time],input[type=date]{width:100%;padding:8px;border:1px solid #e9d7e3;border-radius:6px}
+    textarea{min-height:90px}
+    .small{font-size:13px;color:var(--muted)}
+    .flex{display:flex;gap:12px}
+    .col{flex:1}
+    @media(max-width:900px){.samples .sample{flex:1 1 100%}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="logo">BA Pretty Princess</h1>
+      <nav aria-label="main-nav">
+        <a href="#home">Home & About</a>
+        <a href="#samples">Samples & Sketches</a>
+        <a href="#booking">Booking</a>
+        <a href="#order">Order Description</a>
+        <a href="#contact">Contact & Payment</a>
+      </nav>
+    </header>
+
+    <!-- Title1: Home & About -->
+    <section id="home">
+      <h2>Home & About Us</h2>
+      <p class="muted">BA Pretty Princess creates designs and styling assets for events and businesses. We focus on quality and clear communication.</p>
+      <div style="background:#fff3f8;border-left:4px solid #f5a0d0;padding:10px;border-radius:8px;margin-top:12px">
+        <strong>Disclaimer!!!</strong>
+        <p style="margin:6px 0 0 0;">We create designs and we do not print.</p>
+        <p style="margin:6px 0 0 0;">Business Description: We offer the following services;</p>
+        <ol style="margin:6px 0 0 18px 20px">
+          <li>Website creation and Graphics Design</li>
+          <li>Business flyers</li>
+          <li>Catering flyers</li>
+          <li>Organization flyers</li>
+          <li>Supermarket flyers</li>
+          <li>Restaurant flyers</li>
+          <li>Product/Service promotion flyers</li>
+          <li>Training flyers</li>
+          <li>Home Cleaning Service Flyers</li>
+          <li>Health/Wellness/Fitness flyers</li>
+          <li>Business cards</li>
+          <li>Company logo</li>
+          <li>Calendar</li>
+          <li>Wedding Invitation</li>
+          <li>Wedding Anniversary invitation</li>
+          <li>Graduation invitation</li>
+          <li>Prom invitation</li>
+          <li>Hangout invitation</li>
+        </ol>
+        <p style="margin:6px 0 0 0;">We also create, update and manage websites for big and small businesses.</p>
+      </div>
+    </section>
+
+    <!-- Title2: Samples & Sketches -->
+    <section id="samples">
+      <h2>Samples & Sketches</h2>
+      <div class="samples">
+  <div class="sample">
+    <a href="image 1.jpg" target="_blank">
+      <img src="image 1.jpg" alt="Sample1" width="300" height="200">
+    </a>
+  </div>
+
+  <div class="sample">
+    <a href="pdress.jpg" target="_blank">
+      <img src="pdress.jpg" alt="A Sketch" width="300" height="200">
+    </a>
+  </div>
+</div>
+      <p class="small">Picture samples of services we offer stated in Home & About. We also make sketches and designs of styles or designs you have in mind with detailed description to send to your fashion designer. We make sketches of logos, flyers, business cards, calendars and invitations if you have any design in mind.</p>
+    </section>
+
+    <!-- Title3: Booking date and time -->
+    <section id="booking">
+      <h2>Booking — Date & Time</h2>
+      <p class="small">We take <strong>3 bookings each day</strong> and we personally inform our clients of our delivery date. Any need for delivery compromise from any client will incur additional charges.</p>
+
+      <div style="margin:12px 0" class="small"><strong>Instruction:</strong> Tick the box for the day you want to book, then fill the week of the month, month, time, your first name and your functional email. After ticking a box, the booking display will show your selection.</div>
+
+      <!-- booking form inputs -->
+      <div class="flex" style="margin-bottom:12px">
+        <div class="col">
+          <label>Week of month</label>
+          <select id="weekOfMonth">
+            <option value="1">Week 1</option>
+            <option value="2">Week 2</option>
+            <option value="3">Week 3</option>
+            <option value="4">Week 4</option>
+            <option value="5">Week 5</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Month</label>
+          <select id="monthSelect">
+            <option>January</option><option>February</option><option>March</option><option>April</option>
+            <option>May</option><option>June</option><option>July</option><option>August</option>
+            <option>September</option><option>October</option><option>November</option><option>December</option>
+          </select>
+        </div>
+        <div style="flex:0 0 160px">
+          <label>Time</label>
+          <input id="bookingTime" type="time">
+        </div>
+      </div>
+
+      <div class="flex" style="margin-bottom:12px">
+        <div class="col">
+          <label>First name</label>
+          <input id="clientFirstName" type="text" placeholder="Your first name">
+        </div>
+        <div class="col">
+          <label>Functional email</label>
+          <input id="clientEmail" type="email" placeholder="you@example.com">
+        </div>
+      </div>
+
+      <!-- booking table -->
+      <table>
+        <thead>
+          <tr><th>Day</th><th>Slot 1</th><th>Slot 2</th><th>Slot 3</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td><input type="checkbox" data-day="Monday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Monday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Monday" onchange="handleTick(this)"></td></tr>
+          <tr><td>Tuesday</td><td><input type="checkbox" data-day="Tuesday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Tuesday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Tuesday" onchange="handleTick(this)"></td></tr>
+          <tr><td>Wednesday</td><td><input type="checkbox" data-day="Wednesday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Wednesday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Wednesday" onchange="handleTick(this)"></td></tr>
+          <tr><td>Thursday</td><td><input type="checkbox" data-day="Thursday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Thursday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Thursday" onchange="handleTick(this)"></td></tr>
+          <tr><td>Friday</td><td><input type="checkbox" data-day="Friday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Friday" onchange="handleTick(this)"></td><td><input type="checkbox" data-day="Friday" onchange="handleTick(this)"></td></tr>
+        </tbody>
+      </table>
+
+      <div id="bookingDisplay" style="margin-top:12px"></div>
+    </section>
+
+    <!-- Title4: Order Description -->
+    <section id="order">
+      <h2>Order Description</h2>
+      <p class="small">Now it is time for you to describe what you want!</p>
+
+      <label>Type of service required</label>
+      <select id="serviceType">
+        <option>Website creation and Graphics Design</option>
+        <option>Business flyers</option>
+        <option>Catering flyers</option>
+        <option>Organization flyers</option>
+        <option>Supermarket flyers</option>
+        <option>Restaurant flyers</option>
+        <option>Product/Service promotion flyers</option>
+        <option>Training flyers</option>
+        <option>Home Cleaning Service Flyers</option>
+        <option>Health/Wellness/Fitness flyers</option>
+        <option>Business cards</option>
+        <option>Company logo</option>
+        <option>Calendar</option>
+        <option>Wedding Invitation</option>
+        <option>Wedding Anniversary invitation</option>
+        <option>Graduation invitation</option>
+        <option>Prom invitation</option>
+        <option>Hangout invitation</option>
+      </select>
+
+      <div class="flex" style="margin-top:8px">
+        <div class="col"><label>Colour 1</label><input id="color1" type="text" placeholder="e.g. Pink"></div>
+        <div class="col"><label>Colour 2</label><input id="color2" type="text" placeholder="e.g. Gold"></div>
+        <div class="col"><label>Colour 3</label><input id="color3" type="text" placeholder="e.g. White"></div>
+      </div>
+
+      <label style="margin-top:8px">Describe details</label>
+      <textarea id="orderDescription" placeholder="Write sizes, text, special notes..."></textarea>
+
+      <div style="margin-top:10px"><button class="btn" onclick="submitOrder()">Submit Order</button></div>
+    </section>
+
+    <!-- Title5: Contact us & Payment -->
+    <section id="contact">
+      <h2>Contact Us & Payment</h2>
+      <p class="small">
+        Clients Account name and bank: <br>
+        <strong>BA Pretty Princess</strong> — <em>Account & Bank details to be provided on request</em>
+      </p>
+      <p class="small">Email: <a href="mailto:baprincess1purr@gmail.com">baprincess1purr@gmail.com</a></p>
+      <p class="small">Snapchat: <strong>baprettyprinces</strong><br> TikTok: <strong>ba_pretty_princess</strong><br> Instagram: <strong>ba_pretty_princess</strong></p>
+    </section>
+
+    <footer style="text-align:center;margin-top:20px;color:var(--muted)">© BA Pretty Princess</footer>
+  </div>
+
+  <script>
+    // Handle booking checkbox tick
+    function handleTick(cb){
+      const display = document.getElementById('bookingDisplay');
+      const day = cb.dataset.day;
+      const week = document.getElementById('weekOfMonth').value;
+      const month = document.getElementById('monthSelect').value;
+      const time = document.getElementById('bookingTime').value || 'Not set';
+      const fname = document.getElementById('clientFirstName').value || 'Not provided';
+      const email = document.getElementById('clientEmail').value || 'Not provided';
+
+      if(cb.checked){
+        // create entry
+        const entry = document.createElement('div');
+        entry.className = 'booking-entry';
+        entry.style.border = '1px solid #f0d0e2';
+        entry.style.padding = '8px';
+        entry.style.marginTop = '8px';
+        entry.innerHTML = '<strong>Booked:</strong> '+day+' — Week '+week+', '+month+' — Time: '+time+'<br>Client: '+fname+' | Email: '+email+' <button style="margin-left:8px" onclick="removeEntry(this,\''+cb.dataset.day+'\')">Remove</button>';
+        // attach a data-ref to remove later
+        entry.dataset.refDay = day;
+        display.appendChild(entry);
+      } else {
+        // if unchecked remove corresponding entry (first match)
+        const entries = Array.from(document.querySelectorAll('#bookingDisplay .booking-entry'));
+        const toRemove = entries.find(e => e.dataset.refDay === day);
+        if(toRemove) toRemove.remove();
+      }
+    }
+    function removeEntry(btn, day){
+      // remove display entry and uncheck the first checkbox for that day
+      const entry = btn.parentElement;
+      entry.remove();
+      const cb = document.querySelector('input[type=checkbox][data-day="'+day+'"]');
+      if(cb) cb.checked = false;
+
+    }
+
+    function submitOrder(){
+      const service = document.getElementById('serviceType').value;
+      const c1 = document.getElementById('color1').value;
+      const c2 = document.getElementById('color2').value;
+      const c3 = document.getElementById('color3').value;
+      const desc = document.getElementById('orderDescription').value;
+      if(!desc){ alert('Please describe your order.'); return; }
+      alert('Order submitted:
+Service: '+service+'
+Colours: '+c1+', '+c2+', '+c3+'
+Description: '+desc.substring(0,120)+(desc.length>120?'...':'') );
+      document.getElementById('orderDescription').value='';
+    }
+  </script>
+<!-- replace action URL with your Formspree endpoint -->
+<form action="https://formspree.io/f/mnngvyyz" method="POST">
+  <!-- optional: customise email subject and thank-you redirect -->
+  <input type="hidden" name="_subject" value="New order — BA Pretty Princess">
+  <!-- set your own thank-you page or remove this line -->
+  <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html">
+
+  <label>Type of service required</label>
+  <select name="service" required>
+    <option>Website creation and Graphics Design</option>
+    <option>Business flyers</option>
+    <option>Catering flyers</option>
+    <option>Organization flyers</option>
+    <option>Supermarket flyers</option>
+    <option>Restaurant flyers</option>
+    <option>Product/Service promotion flyers</option>
+    <option>Training flyers</option>
+    <option>Home Cleaning Service Flyers</option>
+    <option>Health/Wellness/Fitness flyers</option>
+    <option>Business cards</option>
+    <option>Company logo</option>
+    <option>Calendar</option>
+    <option>Wedding Invitation</option>
+    <option>Wedding Anniversary invitation</option>
+    <option>Graduation invitation</option>
+    <option>Prom invitation</option>
+    <option>Hangout invitation</option>
+  </select>
+
+  <label>Colour 1</label><input name="color1" type="text">
+  <label>Colour 2</label><input name="color2" type="text">
+  <label>Colour 3</label><input name="color3" type="text">
+
+  <label>Week of month</label>
+  <select name="week">
+    <option value="1">Week 1</option><option value="2">Week 2</option>
+    <option value="3">Week 3</option><option value="4">Week 4</option>
+    <option value="5">Week 5</option>
+  </select>
+
+  <label>Month</label>
+  <select name="month">
+    <option>January</option><option>February</option><!-- etc --> 
+    <option>December</option>
+  </select>
+
+  <label>Preferred time</label>
+  <input name="time" type="time">
+
+  <!-- Booking checkboxes — user can tick multiple; will send as bookings[] -->
+  <label>Booking (tick slot you want)</label>
+  <table>
+    <tr>
+      <th>Day</th><th>Slot 1</th><th>Slot 2</th><th>Slot 3</th>
+    </tr>
+    <tr>
+      <td>Monday</td>
+      <td><input type="checkbox" name="bookings[]" value="Monday-slot1"></td>
+      <td><input type="checkbox" name="bookings[]" value="Monday-slot2"></td>
+      <td><input type="checkbox" name="bookings[]" value="Monday-slot3"></td>
+    </tr>
+    <!-- Repeat for Tue–Fri (use value like "Tuesday-slot2") -->
+  </table>
+
+  <label>Full name</label><input name="name" type="text" required>
+
+  <!-- use _replyto so you can reply to the sender directly from email -->
+  <label>Email</label><input name="_replyto" type="email" required>
+
+  <label>Order description / details</label>
+  <textarea name="description" required placeholder="Sizes, text, special notes..."></textarea>
+<!-- NEW FIELDS -->
+  <label>Mobile Number</label>
+  <input type="tel" name="mobile" required placeholder="+234 801 234 5678">
+
+  <label>Instagram Handle</label>
+  <input type="text" name="instagram" placeholder="@yourhandle">
+
+  <label>Snapchat Handle</label>
+  <input type="text" name="snapchat" placeholder="@yourhandle">
+
+  <button type="submit" class="btn">Place Order</button>
+</form>
+
+</body>
+</html>
